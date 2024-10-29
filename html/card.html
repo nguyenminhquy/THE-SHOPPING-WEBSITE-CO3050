@@ -1,116 +1,76 @@
-
 <!DOCTYPE html>
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trang Quản Lý Sản Phẩm</title>
+    <title>Lazada Clone</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/css/card.css">
-    <script src="/js/card.js"></script>
 </head>
-<body>
-    <!-- Sidebar -->
-    <div class="sidebar">
-        <h2>Dashboard</h2>
-        <ul>
-            <li><a href="#">Posts</a></li>
-            <li><a href="#">Media</a></li>
-            <li><a href="#">Pages</a></li>
-            <li><a href="#">Comments</a></li>
-            <li><a href="#">Appearance</a></li>
-            <li><a href="#">Plugins</a></li>
-            <li><a href="#">Users</a></li>
-            <li><a href="#">Settings</a></li>
-        </ul>
-    </div>
+<body class="bg-gray-100 font-sans">
 
-    <!-- Main Content -->
-    <div class="main-content">
-        <!-- Topbar bên phải -->
-        <div class="topbar">
-            <a href="#">Giỏ hàng của bạn</a>
-            <a href="#">Thanh toán</a>
-            <a href="/homepage.html">Đăng xuất</a>
+    <!-- Header -->
+    <header class="header">
+        <h1 class="text-lg font-bold">Lazada</h1>
+        <nav class="navbar">
+            <a href="#" class="hover:underline">Categories</a>
+            <a href="#" class="hover:underline">LazMall</a>
+            <a href="#" class="hover:underline">Vouchers</a>
+            <a href="#" class="hover:underline">Top Up & eCoupon</a>
+            <a href="#" class="hover:underline">LazGlobal</a>
+        </nav>
+    </header>
+
+    <!-- Banner -->
+    <section class="banner">
+        <h2 class="banner-title">Thêm Deal Vào Giỏ Bày Tỏ Yêu Thương</h2>
+        <p class="banner-subtitle">100% Chính Hãng - Ưu Đãi Mỗi Ngày</p>
+    </section>
+
+    <!-- Categories -->
+    <div class="categories">
+        <div class="category-item">
+            <span class="text-lg">🛒</span>
+            <span>Picks For You</span>
         </div>
-
-        <h1>Quản Lý Sản Phẩm</h1>
-        <div class="product-grid">
-            <!-- Thẻ sản phẩm 1 -->
-            <div class="product-grid">
-                <!-- Sản phẩm 1 -->
-                <div class="product-card" onclick="redirectToProduct()">
-                    <img src="product1.jpg" alt="Sản phẩm 1">
-                    <div class="product-info">
-                        <h3>Sản phẩm 1</h3>
-                        <p>Giá: 277k</p>
-                        <button onclick="redirectToCart(event)">Thêm vào giỏ</button>
-                    </div>
-                </div>
-
-                <div class="product-grid">
-                    <!-- Sản phẩm 1 -->
-                    <div class="product-card" onclick="redirectToProduct()">
-                        <img src="product1.jpg" alt="Sản phẩm 1">
-                        <div class="product-info">
-                            <h3>Sản phẩm 1</h3>
-                            <p>Giá: 277k</p>
-                            <button onclick="redirectToCart(event)">Thêm vào giỏ</button>
-                        </div>
-                    </div>
-                    <div class="product-grid">
-                        <!-- Sản phẩm 1 -->
-                        <div class="product-card" onclick="redirectToProduct()">
-                            <img src="product1.jpg" alt="Sản phẩm 1">
-                            <div class="product-info">
-                                <h3>Sản phẩm 1</h3>
-                                <p>Giá: 277k</p>
-                                <button onclick="redirectToCart(event)">Thêm vào giỏ</button>
-                            </div>
-                        </div>
-                        <div class="product-grid">
-                            <!-- Sản phẩm 1 -->
-                            <div class="product-card" onclick="redirectToProduct()">
-                                <img src="product1.jpg" alt="Sản phẩm 1">
-                                <div class="product-info">
-                                    <h3>Sản phẩm 1</h3>
-                                    <p>Giá: 277k</p>
-                                    <button onclick="redirectToCart(event)">Thêm vào giỏ</button>
-                                </div>
-                            </div>
-                            <div class="product-grid">
-                                <!-- Sản phẩm 1 -->
-                                <div class="product-card" onclick="redirectToProduct()">
-                                    <img src="product1.jpg" alt="Sản phẩm 1">
-                                    <div class="product-info">
-                                        <h3>Sản phẩm 1</h3>
-                                        <p>Giá: 277k</p>
-                                        <button onclick="redirectToCart(event)">Thêm vào giỏ</button>
-                                    </div>
-                                </div>
-                                <div class="product-grid">
-                                    <!-- Sản phẩm 1 -->
-                                    <div class="product-card" onclick="redirectToProduct()">
-                                        <img src="product1.jpg" alt="Sản phẩm 1">
-                                        <div class="product-info">
-                                            <h3>Sản phẩm 1</h3>
-                                            <p>Giá: 277k</p>
-                                            <button onclick="redirectToCart(event)">Thêm vào giỏ</button>
-                                        </div>
-                                    </div>
-                                    <div class="product-grid">
-                                        <!-- Sản phẩm 1 -->
-                                        <div class="product-card" onclick="redirectToProduct()">
-                                            <img src="product1.jpg" alt="Sản phẩm 1">
-                                            <div class="product-info">
-                                                <h3>Sản phẩm 1</h3>
-                                                <p>Giá: 277k</p>
-                                                <button onclick="redirectToCart(event)">Thêm vào giỏ</button>
-                                            </div>
-                                        </div>
-        
-
-            <!-- Thêm các sản phẩm khác nếu cần -->
+        <div class="category-item">
+            <span class="text-lg">🍎</span>
+            <span>Groceries</span>
+        </div>
+        <div class="category-item">
+            <span class="text-lg">🏠</span>
+            <span>Home & Lifestyle</span>
+        </div>
+        <div class="category-item">
+            <span class="text-lg">📱</span>
+            <span>Electronic Accessories</span>
+        </div>
+        <div class="category-item">
+            <span class="text-lg">👚</span>
+            <span>Fashion</span>
         </div>
     </div>
+
+    <!-- Product Grid -->
+    <main class="product-grid">
+        <!-- Product Card Example -->
+        <div class="product-card">
+            <img src="https://via.placeholder.com/150" alt="Product Image" class="product-image">
+            <h3 class="product-title">Sản phẩm mẫu</h3>
+            <p class="product-price">₫100,000</p>
+        </div>
+        <div class="product-card">
+            <img src="https://via.placeholder.com/150" alt="Product Image" class="product-image">
+            <h3 class="product-title">Sản phẩm mẫu 2</h3>
+            <p class="product-price">₫200,000</p>
+        </div>
+        <!-- Thêm các sản phẩm khác tương tự -->
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-200 p-4 mt-10 text-center text-gray-600">
+        © 2024 Lazada Clone. All rights reserved.
+    </footer>
+
 </body>
 </html>
